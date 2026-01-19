@@ -14,4 +14,3 @@ async function bootstrap() {
   console.log(' Backend is running on: http://localhost:3000');
 }
 bootstrap();
-export default app;
