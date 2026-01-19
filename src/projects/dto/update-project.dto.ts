@@ -1,8 +1,4 @@
-export class UpdateProjectDto {
-  title?: string;
-  description?: string;
-  techStack?: string[];
-  image?: string;
-  liveUrl?: string;
-  githubUrl?: string;
-}
+import { PartialType } from '@nestjs/mapped-types';
+import { CreateProjectDto } from './project.dto';
+
+export class UpdateProjectDto extends PartialType(CreateProjectDto) {}
